@@ -1,6 +1,6 @@
 {
   "name": "inline-refiner",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Fixes typos, spacing, capitals and punctuation in your prompt right in the prompt box, before it reaches Claude. No copy-pasting into another tool. Shows what changed in a side pane. Works on queued messages too. Toggle with /refine.",
   "author": { "name": "Nikhil Asudani" },
   "license": "MIT",

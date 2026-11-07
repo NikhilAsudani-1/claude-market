@@ -10,21 +10,22 @@ Each plugin here changes how the prompt box or the chat behaves. They are instal
 
 ## Install
 
-In a terminal session of Claude Code:
+Type these two commands **in your terminal** (PowerShell, bash, or the terminal inside your editor), **not** in the Claude Code chat. They have no leading slash:
 
 ```
-/plugin install inline-refiner --marketplace NikhilAsudani-1/claude-market
+claude plugin marketplace add NikhilAsudani-1/claude-market
+claude plugin install inline-refiner@claude-market
 ```
 
-Answer `y` to "Add marketplace?", then pick a scope. The plugin is active straight away, with no reload.
+Then **restart Claude Code**. It is on by default; type `/refine` in a chat to toggle it off or on.
 
-From a shell:
+The form is `plugin@marketplace`: `inline-refiner` is the plugin and `claude-market` is this repository's marketplace name.
 
-```
-claude plugin install inline-refiner --marketplace NikhilAsudani-1/claude-market
-```
-
-In the desktop app, where `/plugin` does not run: click **+** next to the prompt box, then **Plugins**, then **Add marketplace** and enter `NikhilAsudani-1/claude-market`, then **Add plugin**.
+Notes:
+- Slash commands such as `/plugin install ...` only work inside a Claude Code chat session, and not in every environment (for example, some hosted or embedded versions answer "/plugin isn't available in this environment"). The terminal commands above work everywhere `claude` is installed.
+- Newer versions also accept a one-step form: `claude plugin install inline-refiner --marketplace NikhilAsudani-1/claude-market`. Older versions do not have the `--marketplace` flag, so use the two commands above.
+- In the desktop app you can instead click **+** next to the prompt box, then **Plugins**, then **Add marketplace** and enter `NikhilAsudani-1/claude-market`, then **Add plugin**.
+- To check it loaded, run `claude plugin list` in the terminal.
 
 ## inline-refiner
 
