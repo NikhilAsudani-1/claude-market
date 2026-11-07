@@ -1,0 +1,12 @@
+{
+  "name": "claude-market",
+  "description": "Small plugins for Claude Code that change how the prompt box and chat behave.",
+  "owner": { "name": "Nikhil Asudani" },
+  "plugins": [
+    {
+      "name": "inline-refiner",
+      "source": "./plugins/inline-refiner",
+      "description": "Fixes typos in your prompt right in the prompt box, before it reaches Claude. No copy-pasting."
+    }
+  ]
+}
